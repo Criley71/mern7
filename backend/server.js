@@ -16,7 +16,6 @@ app.use('/api/goals', require('./routes/mealRoutes'))
 app.use('/api/users', require('./routes/userRoutes'))
 
 // serve frontend
-/*
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../frontend/build')))
   app.get('*', (req, res) => {
@@ -25,7 +24,7 @@ if (process.env.NODE_ENV === 'production') {
 } else {
   app.get('/', (req, res) => res.send('Please set to production'))
 }
-*/
+
 app.use(errorHandler)
 
 
