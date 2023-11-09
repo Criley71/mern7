@@ -39,7 +39,7 @@ function Dashboard() {
     <>
     <section className="heading">
       <h1>Welcome {user && user.name}</h1>
-      <p>Goals Dashboard</p>
+      <p>PaxPal Meal Tracking</p>
     </section>
     < MealForm />
 
@@ -49,7 +49,7 @@ function Dashboard() {
        {meals.map((meal) => (
          <MealItem key={meal._id} meal={meal} />
         ))} 
-      </div> ): (<h3>You have not set any goals</h3>)}
+      </div> ): (<h3>No Meals Entered Yet</h3>)}
     </section>
 
     
